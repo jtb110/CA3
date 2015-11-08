@@ -1,1 +1,90 @@
-<p>This is the partial for view 4.</p>
+<h3>Valutaomregner</h3>
+ <div class="col-md-6" ng-controller="View4Ctrl">
+        <table class="table">
+            <input type="text" placeholder="Amount" ng-model="ctrl.amount">
+            <br>
+            <div>
+                <select name="currencyOne" ng-model="ctrl.firstCurrency">
+                    <option value="" disabled selected>Vælg første valuta</option>
+                    <option value="AUD">Australian dollar</option>
+                    <option value="BGN">Bulgarian lev</option>
+                    <option value="BRL">Brazilian real</option>
+                    <option value="CAD">Canadian dollar</option>
+                    <option value="CHF">Swiss francs</option>
+                    <option value="CNY">Chinesse yuan renminbi</option>
+                    <option value="CZK">Czech koruny</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">Punds sterling</option>
+                    <option value="HKD">Hong Kong dollar</option>
+                    <option value="HRK">Croatian kuna</option>
+                    <option value="HUF">Hungarian forint</option>
+                    <option value="IDR">Indonesian rupiah</option>
+                    <option value="ILS">Israeli shekel</option>
+                    <option value="INR">Indian rupee</option>
+                    <option value="ISK">Icelandic kronur</option>
+                    <option value="JPY">Japanese yen</option>
+                    <option value="KRW">South Korean won</option>
+                    <option value="MXN">Mexican peso</option>
+                    <option value="MYR">Malaysian ringgit</option>
+                    <option value="NOK">Norwegian kroner</option>
+                    <option value="NZD">New Zealand dollar</option>
+                    <option value="PHP">Philippine peso</option>
+                    <option value="PLN">Polish zlotys</option>
+                    <option value="RON">Romanian leu</option>
+                    <option value="RUB">Russian rouble</option>
+                    <option value="SEK">Swedish kroner</option>
+                    <option value="SGD">Singapore dollar</option>
+                    <option value="THB">Thai baht</option>
+                    <option value="TRY">Turkish lira</option>
+                    <option value="USD">US dollar</option>
+                    <option value="XDR">SDR</option>
+                    <option value="ZAR">South African rand</option>
+                </select>
+            </div>
+            <div>
+                <select name="currencyTwo" ng-model="ctrl.secondCurrency">
+                    <option value="" disabled selected>Vælg anden valuta</option>
+                    <option value="AUD">Australian dollar</option>
+                    <option value="BGN">Bulgarian lev</option>
+                    <option value="BRL">Brazilian real</option>
+                    <option value="CAD">Canadian dollar</option>
+                    <option value="CHF">Swiss francs</option>
+                    <option value="CNY">Chinesse yuan renminbi</option>
+                    <option value="CZK">Czech koruny</option>
+                    <option value="EUR">Euro</option>
+                    <option value="GBP">Punds sterling</option>
+                    <option value="HKD">Hong Kong dollar</option>
+                    <option value="HRK">Croatian kuna</option>
+                    <option value="HUF">Hungarian forint</option>
+                    <option value="IDR">Indonesian rupiah</option>
+                    <option value="ILS">Israeli shekel</option>
+                    <option value="INR">Indian rupee</option>
+                    <option value="ISK">Icelandic kronur</option>
+                    <option value="JPY">Japanese yen</option>
+                    <option value="KRW">South Korean won</option>
+                    <option value="MXN">Mexican peso</option>
+                    <option value="MYR">Malaysian ringgit</option>
+                    <option value="NOK">Norwegian kroner</option>
+                    <option value="NZD">New Zealand dollar</option>
+                    <option value="PHP">Philippine peso</option>
+                    <option value="PLN">Polish zlotys</option>
+                    <option value="RON">Romanian leu</option>
+                    <option value="RUB">Russian rouble</option>
+                    <option value="SEK">Swedish kroner</option>
+                    <option value="SGD">Singapore dollar</option>
+                    <option value="THB">Thai baht</option>
+                    <option value="TRY">Turkish lira</option>
+                    <option value="USD">US dollar</option>
+                    <option value="XDR">SDR</option>
+                    <option value="ZAR">South African rand</option>
+                </select>
+            </div>
+            <button type="button" class="btn btn-success" ng-click="ctrl.calculate()">Calculate</button>
+
+            <div id="totalCurrency"">
+                <h4>Amount after exchange: {{ctrl.data.amount}}</h4>
+
+            </div>
+
+        </table>
+    </div>
